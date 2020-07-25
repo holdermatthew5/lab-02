@@ -40,7 +40,6 @@ h1 {
   border: 0px;
   padding: 0px;
   vertical-align: middle;
-  
 }
 
 #past1 {
@@ -88,11 +87,36 @@ h1 {
 #article4 {
   margin-top: 50px;
   padding: 30px;
+  text-align: center;
+  background-color: darkgray;
+  line-height: 150%;
+}
+
+h2 {
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#article4>ol {
+  display: inline-block;
+  text-align: left;
+
+}
+
+.title {
+  padding: 10px;
+  font-weight: bold;
+}
+
+#article5 {
+  margin-top: 50px;
+  padding: 30px;
   line-height: 150%;
   background-color: darkgray;
 }
 
-#article4>ul {
+#article5>ul {
   display: inline-block;
 }
 
