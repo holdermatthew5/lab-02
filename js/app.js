@@ -103,6 +103,8 @@ var a = 0
 // console.log(response6);
 // document.getElementById('q6').innerHTML = response6
 
+// a++ on 122 is to count the number of correct answers.
+
 var states = ['texas', 'illinois', 'california'];
 var response7 = prompt('Try guessing a state I\'ve visited');
 var answer7 = response7.toLowerCase();
