@@ -51,33 +51,16 @@ function question4() {
   }
 }
 
-// var response4 = prompt('4. Do I have any pets?');
-// var answer4 = response4.toLowerCase();
-// if (answer4 !== 'yes' && answer4 !== 'y' && answer4 !== 'no' && answer4 !== 'n') {
-//   response4 = prompt('Please answer yes or no. Do I have any pets?');
-// }
-// if (answer4 === 'yes' || answer4 === 'y') {
-//   alert('Correct! I have a beautiful puppy named Macy!');
-//   a++;
-// } else {
-//   alert('Incorrect! I have a beautiful puppy named Macy!');
-// }
-// console.log(response4);
-// document.getElementById('q4').innerHTML = response4;
-
-// var response5 = prompt('5. Am I interested in robotics?');
-// var answer5 = response5.toLowerCase();
-// if (answer5 !== 'yes' && answer5 !== 'y' && answer5 !== 'no' && answer5 !== 'n') {
-//   response5 = prompt('Please answer yes or no. Am I interested in robotics?');
-// }
-// if (answer5 === 'yes' || answer5 === 'y') {
-//   alert('Correct! It\'s my passion!');
-//   a++;
-// } else {
-//   alert('Incorrect! It\'s my passion!');
-// }
-// console.log(response5);
-// document.getElementById('q5').innerHTML = response5;
+function question5() {
+  var response5 = prompt('5. Am I interested in robotics?');
+  var answer5 = response5.toLowerCase();
+  if (answer5 === 'yes' || answer5 === 'y') {
+    alert ('Correct! It\'s my passion!');
+    a++;
+  } else if (answer5 === 'no' || answer5 === 'n') {
+    alert ('Incorrect! It\'s my passion!');
+  }
+}
 
 // var response6 = prompt('How many years did I spend at my permanent duty station?');
 // var i = 0;
