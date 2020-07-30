@@ -18,19 +18,16 @@ function question1() {
   }
 }
 
-// var response2 = prompt('2. Have I ever left the U.S.?');
-// var answer2 = response2.toLowerCase();
-// if (answer2 !== 'yes' && answer2 !== 'y' && answer2 !== 'no' && answer2 !== 'n') {
-//   response2 = prompt('Please answer yes or no. Have I ever left the U.S.?');
-// }
-// if (answer2 === 'yes' || answer2 === 'y') {
-//   alert('Correct! I\'ve been to about 10 countries!');
-//   a++;
-// } else {
-//   alert('Incorrect! I\'ve been to about 10 countries');
-// }
-// console.log(response2);
-// document.getElementById('q2').innerHTML = response2;
+function question2() {
+  var response2 = prompt('2. Have I ever left the U.S.?');
+  var answer2 = response2.toLowerCase();
+  if (answer2 === 'yes' || answer2 === 'y') {
+    alert ('Correct! I\'ve been to about 10 countries!');
+    a++;
+  } else if (answer2 === 'no' || answer2 === 'n') {
+    alert ('Incorrect! I\'ve been to about 10 countries');
+  }
+}
 
 // var response3 = prompt('3. Did I join the Army?');
 // var answer3 = response3.toLowerCase();
