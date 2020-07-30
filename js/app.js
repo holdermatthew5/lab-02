@@ -29,19 +29,27 @@ function question2() {
   }
 }
 
-// var response3 = prompt('3. Did I join the Army?');
-// var answer3 = response3.toLowerCase();
-// if (answer3 !== 'yes' && answer3 !== 'y' && answer3 !== 'no' && answer3 !== 'n') {
-//   response3 = prompt('Please answer yes or no. Did I join the Army?');
-// }
-// if (answer3 === 'no' || answer3 === 'n') {
-//   alert('Correct! I served 4 years active duty in the Navy!');
-//   a++;
-// } else {
-//   alert('Incorrect! I served 4 years active duty in the Navy!');
-// }
-// console.log(response3);
-// document.getElementById('q3').innerHTML = response3;
+function question3() {
+  var response3 = prompt('3. Did I join the Army?');
+  var answer3 = response3.toLowerCase();
+  if (answer3 === 'yes' || answer3 === 'y') {
+    alert ('Incorrect! I served 4 years active duty in the Navy!');
+  } else if (answer3 === 'no' || answer3 === 'n') {
+    alert ('Correct! I served 4 years active duty in the Navy!');
+    a++;
+  }
+}
+
+function question4() {
+  var response4 = prompt('4. Do I have any pets?');
+  var answer4 = response4.toLowerCase();
+  if (answer4 === 'yes' || answer4 === 'y') {
+    alert ('Correct! I have a beautiful puppy named Macy!');
+    a++;
+  } else if (answer4 === 'no' || answer4 === 'n') {
+    alert ('Incorrect! I have a beautiful puppy named Macy!');
+  }
+}
 
 // var response4 = prompt('4. Do I have any pets?');
 // var answer4 = response4.toLowerCase();
