@@ -1,5 +1,14 @@
 'use strict';
 
+question1();
+question2();
+question3();
+question4();
+question5();
+question6();
+question7();
+finalScore();
+
 var a = 0;
 var name1 = prompt('Hi! I\'m Matt. What\'s your name?');
 alert('Hi ' + name1 + '! I\'m so glad to meet you');
@@ -16,7 +25,8 @@ function question1() {
   } else if (answer1 === 'no' || answer1 === 'n') {
     alert('Actually my name does have two t\'s');
   }
-} question1();
+  document.getElementById('q1').innerHTML = response1;
+}
 
 function question2() {
   var response2 = prompt('2. Have I ever left the U.S.?');
@@ -27,7 +37,8 @@ function question2() {
   } else if (answer2 === 'no' || answer2 === 'n') {
     alert('Incorrect! I\'ve been to about 10 countries');
   }
-} question2();
+  document.getElementById('q2').innerHTML = response2;
+}
 
 function question3() {
   var response3 = prompt('3. Did I join the Army?');
@@ -38,7 +49,8 @@ function question3() {
     alert('Correct! I served 4 years active duty in the Navy!');
     a++;
   }
-} question3();
+  document.getElementById('q3').innerHTML = response3;
+}
 
 function question4() {
   var response4 = prompt('4. Do I have any pets?');
@@ -49,7 +61,8 @@ function question4() {
   } else if (answer4 === 'no' || answer4 === 'n') {
     alert('Incorrect! I have a beautiful puppy named Macy!');
   }
-} question4();
+  document.getElementById('q4').innerHTML = response4;
+}
 
 function question5() {
   var response5 = prompt('5. Am I interested in robotics?');
@@ -60,9 +73,8 @@ function question5() {
   } else if (answer5 === 'no' || answer5 === 'n') {
     alert('Incorrect! It\'s my passion!');
   }
-} question5();
-
-
+  document.getElementById('q5').innerHTML = response5;
+}
 
 function question6() {
   var response6 = prompt('How many years did I spend at my permanent duty station?');
@@ -84,11 +96,9 @@ function question6() {
       alert('Incorrect! I spent 3 years at my permanent duty station and about 1 year between laerning to be the best sailor I could be and taking leave at the end of my contract to prepare myself for civilian life.');
       i++;
     }
-    console.log(response6);
   }
+  document.getElementById('q6').innerHTML = response6;
 }
-question6();
-
 
 function question7() {
   var states = ['texas', 'illinois', 'california', 'washington'];
@@ -96,10 +106,8 @@ function question7() {
   var answer7 = response7.toLowerCase();
   var pass2 = false;
   for (var j = 0; j < 5; j++) {
-    console.log(`guess ${j}`);
     for (var k = 0; k < states.length; k++) {
       answer7 = response7.toLowerCase();
-      console.log(answer7, states[k]);
       if (states[k] === answer7) {
         pass2 = true;
       }
@@ -114,14 +122,12 @@ function question7() {
   } else {
     alert('Incorrect! I\'ve been to Texas, Illinois, California and now Washington.');
   }
-  console.log(response7);
-} question7();
+  document.getElementById('q7').innerHTML = response7;
+}
 
-// console.log('You got ' + a + ' out of 7 correct.');
 function finalScore() {
   alert('You got ' + a + ' out of 7 correct.');
 }
-finalScore;
 
-// var result1 = ('You got ' + a + ' out of 7 correct.');
-// document.getElementById('result').innerHTML = result1;
+var result1 = ('You got ' + a + ' out of 7 correct.');
+document.getElementById('result').innerHTML = result1;

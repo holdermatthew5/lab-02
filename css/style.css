@@ -69,11 +69,13 @@ h1 {
 }
 
 #present2 {
-  width: 500px;
+  width: 550px;
   display: inline-block;
   vertical-align: top;
   text-indent: 30px;
   line-height: 150%;
+  margin-top: 40px;
+  margin-left: 30px;
 }
 
 #article3 {
