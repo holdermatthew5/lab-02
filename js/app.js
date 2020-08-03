@@ -80,7 +80,7 @@ function question6() {
   var response6 = prompt('How many years did I spend at my permanent duty station?');
   var i = 0;
   while (i <= 4) {
-    if (response6 == 3) {
+    if (response6 === '3') {
       alert('Correct! I spent 3 years at my permanent duty station and about 1 year between laerning to be the best sailor I could be and taking leave at the end of my contract to prepare myself for civilian life.');
       a++;
       break;
